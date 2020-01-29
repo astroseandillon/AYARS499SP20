@@ -43,21 +43,12 @@ plt.plot(time, x2)
 plt.plot(time, x3)
 plt.plot(time, x4)
 plt.plot(time, x5)
-
-
-
 plt.show()
 
-
-
-
-
-
-
-
-
-print(data)
-print(time)
+x1_fft = np.fft.fft(x1)
+plt.figure()
+plt.plot(x1, x1_fft)
+plt.show()
 
 
 
